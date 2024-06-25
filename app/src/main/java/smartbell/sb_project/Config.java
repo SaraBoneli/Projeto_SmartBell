@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 
 public class Config {
     // endereço base do servidor web
-    public static String SMARTBELL_APP_URL = "https://productifes-dispmoveisbsi.b4a.run/";//mudar para endereço que foi criado no back4
+    public static String VISITAS_APP_URL = "https://smartbell-l5ft8dgm.b4a.run/";//mudar para endereço que foi criado no back4
 
     /**
      * Salva o login no espaço reservado da app

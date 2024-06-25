@@ -104,7 +104,7 @@ public class ImageCache {
             executorService.execute(new Runnable() {
                 @Override
                 public void run() {
-                    HttpRequest httpRequest = new HttpRequest(Config.SMARTBELL_APP_URL + "pegar_imagem_produto.php", "GET", "UTF-8");
+                    HttpRequest httpRequest = new HttpRequest(Config.VISITAS_APP_URL + "pegar_imagem_produto.php", "GET", "UTF-8");
                     httpRequest.addParam("id", id);
 
                     try {

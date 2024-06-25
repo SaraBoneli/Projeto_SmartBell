@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toolbar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,9 +33,14 @@ public class MainActivity extends AppCompatActivity {
                 //EditText link_imgur = (EditText) findViewById(R.id.link_imgur);
                 //String linkimgur = link_imgur.getText().toString();
 
-                ImageView imgfoto = findViewById(R.id.img_foto);
-                ImageCache.loadImageUrlToImageView(MainActivity.this, imgfoto, 0,0);
-            }
-        });
+        Toolbar toolbar = findViewById(R.id.tb_main);
+
+        ImageView imgfoto = findViewById(R.id.img_foto);
+        int imgHeight = (int) MainActivity.this.getResources().getDimension(R.dimen.img_height);
+        ImageCache.loadImageUrlToImageView(MainActivity.this, imgfoto,-1, imgHeight);//tamanho da iamgem da primeira tela
+
+        //Button provavelmente vai precisar de um intent
+        //TextView
     }
+        //});
 }

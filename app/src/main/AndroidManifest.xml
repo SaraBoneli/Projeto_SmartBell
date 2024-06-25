@@ -18,7 +18,7 @@
             android:name=".NewFotoActivity"
             android:exported="false" />
         <activity
-            android:name=".NewHistActivity"
+            android:name=".HistActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
