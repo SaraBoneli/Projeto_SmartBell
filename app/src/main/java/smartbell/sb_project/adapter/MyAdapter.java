@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.adapter;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.paging.PagingDataAdapter;
 import androidx.recyclerview.widget.DiffUtil;
+
+import smartbell.sb_project.utils.ImageCache;
+import smartbell.sb_project.R;
+import smartbell.sb_project.activity.HistActivity;
+import smartbell.sb_project.model.Visita;
 
 
 public class MyAdapter extends PagingDataAdapter<Visita, MyViewHolder> {
@@ -45,7 +50,7 @@ public class MyAdapter extends PagingDataAdapter<Visita, MyViewHolder> {
         ImageView imgVisitasThumb = holder.itemView.findViewById(R.id.imgVisitas);
 
         // preenche o campo de data
-        TextView tvdataList = holder.itemView.findViewById(R.id.data_foto);
+        TextView tvdataList = holder.itemView.findViewById(R.id.dataVisitas);
         tvdataList.setText(visita.data);
 
 

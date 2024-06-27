@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +14,12 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.paging.PagingData;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import smartbell.sb_project.model.HistViewModel;
+import smartbell.sb_project.adapter.MyAdapter;
+import smartbell.sb_project.R;
+import smartbell.sb_project.model.Visita;
+import smartbell.sb_project.adapter.VisitasComparator;
 
 public class HistActivity extends AppCompatActivity {
 

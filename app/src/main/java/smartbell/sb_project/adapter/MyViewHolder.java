@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.adapter;
 
 import android.view.View;
 

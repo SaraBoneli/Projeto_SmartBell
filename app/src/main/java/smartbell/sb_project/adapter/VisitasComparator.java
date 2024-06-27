@@ -1,7 +1,9 @@
-package smartbell.sb_project;
+package smartbell.sb_project.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.DiffUtil;
+
+import smartbell.sb_project.model.Visita;
 
 
 public class VisitasComparator extends DiffUtil.ItemCallback<Visita> {

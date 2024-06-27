@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.model;
 
 import android.app.Application;
 
@@ -12,6 +12,8 @@ import androidx.paging.PagingData;
 import androidx.paging.PagingLiveData;
 
 import kotlinx.coroutines.CoroutineScope;
+import smartbell.sb_project.adapter.VisitasPagingSource;
+import smartbell.sb_project.adapter.VisitasRepository;
 
 /**
  * ViewModel referente a HistActivity

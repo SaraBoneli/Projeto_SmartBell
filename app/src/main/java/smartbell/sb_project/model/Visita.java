@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.model;
 
 public class Visita {
     public String id; // id da visita

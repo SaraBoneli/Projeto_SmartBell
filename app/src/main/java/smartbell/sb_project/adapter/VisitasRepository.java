@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,6 +11,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+
+import smartbell.sb_project.utils.Config;
+import smartbell.sb_project.utils.HttpRequest;
+import smartbell.sb_project.utils.Util;
+import smartbell.sb_project.model.Visita;
 
 public class VisitasRepository {
 
@@ -92,7 +97,7 @@ public class VisitasRepository {
 
                     // Obtemos os dados de uma visita via JSONObject
                     String pid = jVisitas.getString("id");
-                    String data = jVisitas.getString("data");
+                    String data = jVisitas.getString("data_criacao");
                     String img = jVisitas.getString("img");
 
                     // Criamo um objeto do tipo Visitas para guardar esses dados
@@ -120,7 +125,7 @@ public class VisitasRepository {
      * @param id id do produto que se deseja obter os detalhes
      * @return objeto do tipo product contendo os detalhes do produto
      */
-    Visita loadLastVisita() {
+    public Visita loadLastVisita() {
 
         // Para obter a lista de produtos é preciso estar logado. Então primeiro otemos o login e senha
         // salvos na app.
@@ -177,7 +182,7 @@ public class VisitasRepository {
 
 
                 String img = jsonObject.getString("img");
-                String data = jsonObject.getString("data");
+                String data = jsonObject.getString("data_criacao");
                 String id = jsonObject.getString("id");
                 //vai precisar do id aqui também? e pq data está cinza
 

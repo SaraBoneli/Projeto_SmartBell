@@ -15,13 +15,13 @@
         android:theme="@style/Theme.SB_project"
         tools:targetApi="31">
         <activity
-            android:name=".NewFotoActivity"
+            android:name=".activity.HistActivity"
             android:exported="false" />
         <activity
-            android:name=".HistActivity"
+            android:name=".activity.ViewVisitaActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

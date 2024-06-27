@@ -1,19 +1,18 @@
-package smartbell.sb_project;
+package smartbell.sb_project.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProvider;
+
+import smartbell.sb_project.utils.ImageCache;
+import smartbell.sb_project.R;
+import smartbell.sb_project.model.Visita;
 
 public class ViewVisitaActivity extends AppCompatActivity {
 
-    Visita visita;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,7 +41,7 @@ public class ViewVisitaActivity extends AppCompatActivity {
         ImageCache.loadImageUrlToImageView(ViewVisitaActivity.this, img, imvVisitaPhoto, -1, imgHeight);
 
         TextView dateVisita = findViewById(R.id.data_img);
-        dateVisita.setText(visita.data);
+        dateVisita.setText(date);
 
 
 

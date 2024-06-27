@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,6 +13,8 @@ import com.google.common.util.concurrent.MoreExecutors;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.Executors;
+
+import smartbell.sb_project.model.Visita;
 
 /**
  * Classe para realizar a paginação de dados usando a biblioteca Paging 3

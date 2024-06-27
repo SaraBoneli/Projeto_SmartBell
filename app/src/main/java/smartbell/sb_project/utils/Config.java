@@ -1,4 +1,4 @@
-package smartbell.sb_project;
+package smartbell.sb_project.utils;
 
 import android.content.Context;
 import android.content.SharedPreferences;
